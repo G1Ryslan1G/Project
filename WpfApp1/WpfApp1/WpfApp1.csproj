@@ -72,13 +72,34 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="DataBase\City.cs" />
+    <Compile Include="DataBase\Cloht.cs" />
+    <Compile Include="DataBase\Container.cs" />
+    <Compile Include="DataBase\Furniture.cs" />
     <Compile Include="DataBase\KKNDB.cs" />
+    <Compile Include="DataBase\ObjectsContainer.cs" />
+    <Compile Include="DataBase\Provider.cs" />
+    <Compile Include="DataBase\Role.cs" />
+    <Compile Include="DataBase\Shipment.cs" />
+    <Compile Include="DataBase\ShipmentObject.cs" />
+    <Compile Include="DataBase\Status.cs" />
+    <Compile Include="DataBase\sysdiagram.cs" />
+    <Compile Include="DataBase\User.cs" />
+    <Compile Include="DataBase\Warehouse.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Pages\AuthorizationPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Navigations.cs" />
+    <Compile Include="Pages\AuthorizationPage.xaml.cs">
+      <DependentUpon>AuthorizationPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -105,5 +126,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -4,9 +4,17 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        mc:Ignorable="d" FontSize="24"
+        Title="MainWindow" Height="677" Width="1057" ShowInTaskbar="False" Visibility="Visible" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="19*"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="BackBtn" Content="Button" HorizontalAlignment="Left" Margin="886,52,0,0" VerticalAlignment="Top" Width="114" Height="50" Click="BackBtn_Click"/>
+        <Image HorizontalAlignment="Left" Height="115" VerticalAlignment="Top" Width="273" Margin="10,10,0,0"/>
+        <Frame x:Name="FrameMain" Content="" HorizontalAlignment="Left" Height="513" Grid.Row="1" VerticalAlignment="Top" Width="1051" NavigationUIVisibility="Hidden"/>
+        <Label x:Name="LbNamePages" Content="Name Page" HorizontalAlignment="Left" Margin="378,52,0,0" VerticalAlignment="Top"/>
+
     </Grid>
 </Window>
